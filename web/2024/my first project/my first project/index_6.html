@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Знакомство с тегами часть-3.</title>
+</head>
+<body>
+    <form action="" method="get" enctype="multipart/form-data"></form>
+
+    <p>Тег "form" - это блочный тег, предназначенный для передачи данных".
+        <br>Сам он данные принять не может. 
+        <br>Атрибут "action" должен быть всегда заполнен. 
+        <br>Так же есть атрибут "method". 
+        <br>По умолчанию онн имеет значение "get" - что означает передачу данных открытым для пользователя способом. 
+        <br>Но таким способом объем данных меньше чем при значении "post", 
+        <br>который в свою очередь передает данные скрытым от пользователя способом.
+        <br>Так же имеется атрибут "enctype" со значением "multipart/form-data".
+    </p>
+
+    <p>------------------------------------------------------------------------------------------</p>
+
+    <div>
+        <input type="text" name="username" value="enter a name">
+    </div>
+    <br>
+    <div>
+        <input disabled placeholder="enter name" type="password" name="uaserpass" value="">
+    </div>
+    <br>
+    <div>
+        <input type="tel" name="usernumber" value="">
+    </div>
+    <br>
+    <div>
+        <p><input type="radio" name="beer" value="lager">Светлое пиво</p>
+        <p><input type="radio" name="beer" value="dark">Темное пиво</p>
+    </div>
+    <br>
+    <div>
+        <p><input checked type="radio" name="beer_2" value="lager">Светлое пиво</p>
+        <p><input type="radio" name="beer_2" value="dark">Темное пиво</p>
+    </div>
+    <br>
+    <div>
+        <p><input checked type="checkbox" name="car" value="yes">Наличие авто</p>
+        <p><input type="checkbox" name="car_2" value="yes">Наличие авто 2</p>
+        <p><input type="checkbox" name="car_3" value="yes">Наличие авто 3</p>
+        <p><input type="checkbox" name="car_4" value="yes">Наличие авто 4</p>
+    </div>
+    <br>
+    <div>
+        <p><input type="file" name="foto"></p>
+    </div>
+
+    <p>Строчный тег, предназначенный для передачи данных. 
+        <br>В отличии от тега "form" он принемает данные от пользователя. 
+        <br>У него есть 3 атрибута: 
+        <br>"type" - тип данных ввода, по умолчанию стоит "text", что определяет ввод текста, 
+        <br>"name" - имя тега input, 
+        <br>"value" - значение тега, которое будет отображаться.
+        <br>
+        <br>"checked" - атрибут выбора по умолчанию.
+        <br>
+        <br>Для тегов "input" и "textarea" так же применяется атрибут "placeholder"
+        <br>Он предназначен для подписи окна. 
+        <br>
+        <br>Для всех тегов, кроме тега "form" можно применить атрибут "disabled",
+        <br>который блокирует все действия пользователей и делает пое тусклым(не активным).
+        <br>
+        <br>Так же для всех тегов применяется атрибут "tabindex",
+        <br>который определяет порядок перехода между полями. 
+        <br>У одной группы атрибутов "tabindex" должен иметь одно значение.
+    </p>
+
+    <p>------------------------------------------------------------------------------------------</p>
+
+    <textarea placeholder="введите текст" name="text" id="" cols="30" rows="10"></textarea>
+    <br>
+    <textarea name="text_2" id=""></textarea>
+
+    <p>Тег "Textarea" предназначен для ввода текста. 
+        <br>Атрибуты "cols" и "rows" предназначены для определения размеров поля для вводимого текста.
+        <br>Но как правило эти атрибуты не нужны, так как размер окна контролируется CSS и JS.
+        <br>
+        <br>Для тегов "input" и "textarea" так же применяется атрибут "placeholder"
+        <br>Он предназначен для подписи окна.    
+    </p>
+
+    <p>------------------------------------------------------------------------------------------</p>
+
+    <div>
+        <select name="color">
+            <option value="red">Красный</option>
+            <option value="green">Зеленый</option>
+            <option value="blue">Синий</option>
+        </select>
+    </div>
+
+    <p>Выподающий список состоит из 2 тегов: 
+        <br>-тега "select", который является формой списка;
+        <br>-и тега "option", который является пунктоми списка.
+        <br>Атрибут "id" не нужен.
+    </p>
+    <br>
+    <div>
+        <select multiple name="color">
+            <option value="red">Красный</option>
+            <option selected value="green">Зеленый</option>
+            <option value="blue">Синий</option>
+        </select>
+    </div>
+
+    <p>Иногда к выпадающему списку применяется атрибут "multiple". 
+        <br>Это нужно для множественного выбора.
+        <br>Атрибут "selected" делает выбор по умолчанию.
+    </p>
+
+    <p>------------------------------------------------------------------------------------------</p>
+
+    <button>Отправить 1</button>
+    <br>
+    <button type="submit">Отправить 2</button>
+    <br>
+    <button type="reset">Отправить 3</button>
+
+    <p>Атрибут "button" предназначен для отправки. 
+        <br>Атрибут "type" имеет следующие значения:
+        <br>-"submit" - предназначеный для отправки данных;
+        <br>-"reset" - предназначенный для очистки данных.
+    </p>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Верстка формы с нуля.</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <div>
+            <p>Имя</p>
+            <input placeholder="введите имя" tabindex="1" name="username" type="text">
+        </div>
+        <div>
+            <p>Пароль</p>
+            <input placeholder="введите пароль" tabindex="2" type="password" name="uaserpass">
+        </div>
+        <div>
+            <p>Телефон</p>
+            <input placeholder="введите телефон" tabindex="3" type="tel">
+        </div>
+        <div>
+            <p>Пол</p>
+            <div>
+                <input tabindex="4" checked type="radio" name="gender" value="male">Мужской
+            </div>
+            <div>
+                <input tabindex="4" type="radio" name="gender" value="female">Женский
+            </div>
+        </div>
+        <div>
+            <p>Имущество</p>
+            <div>
+                <input tabindex="5" checked type="checkbox" name="bike" value="yes">Велик
+            </div>
+            <div>
+                <input tabindex="6" type="checkbox" name="car" value="yes">Машина
+            </div>
+            <div>
+                <input tabindex="7" disabled type="checkbox" name="house" value="yes">Дом
+            </div>
+        </div>
+        <div>
+            <p>Дополнительная информация</p>
+            <div>
+                <textarea tabindex="8" name="text"></textarea>
+            </div>
+        </div>
+        <div>
+            <p>Прекрепить фото</p>
+            <div>
+                <input tabindex="9" type="file">
+            </div>
+        </div>
+        <div>
+            <p>Любимый цвет</p>
+            <select tabindex="10" name="color">
+                <option value="red">Красны</option>
+                <option value="green">Зеленый</option>
+                <option value="blue">Синий</option>
+                <option selected value="yellow">Желтый</option>
+            </select>
+        </div>
+        <div>
+            <p>Действие</p>
+            <button tabindex="11" type="submit">Отправить</button>
+            <button tabindex="12" type="reset">Очистить</button>
+        </div>
+    </form>
+</body>
+</html>
