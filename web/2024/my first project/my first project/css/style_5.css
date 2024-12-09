@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+/* ------------------------------------------------------ */
+
+.example-block{
+    padding: 10px 20px 30px 5px; /*сверху,справа,снизу,слева*/
+    padding: 10px 20px 30px;     /*сверху,справа и лева,снизу*/
+    padding: 10px 20px;          /*сверху и снизу,справа и слева*/
+    padding: 10%;               /*и сверху и справа и снизу и слева*/
+    /*У св-ва padding не может быть отрицательного значения;
+    Так же он хорошо работает с блочными тегами*/
+
+    margin: 10px -10px 10px 10px;
+    /*в отличии от padding можно ставить отрицательные значения*/
+    border: 1px solid #000;
+    width: 500px;
+    /*на строчный тег данное значение не действует*/
+}
+
+.example-string{
+    padding: 20px;
+    margin: 10px;
+}
+
+.example-image{
+    width: 100px;
+}
+
+.example-block-1{
+    border: 1px solid #000;
+    max-width: 500px;
+    /*максимальная ширина окна*/
+}
+
+.example-block-2{
+    border: 1px solid #000;
+    min-width: 500px;
+    /*минимальная ширина окна*/
+}
+
+.example-image-1{
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.example-block-3{
+    border: 1px solid black;
+    height: 50%;
+    /*не работает для строчных тегов*/
+    max-height: 100px;
+    /*ограничение по высоте(не более 200 рх)*/
+    /* как видим, текст вылезает за границы бордера. */
+}
+
+.example-block-4{
+    border: 5px solid #000;
+    min-height: 200px;
+    /* ограничение минимальной высоты бордера. */
+}
+
+.example-block-5{
+    max-height: 50px;
+    border: 1px solid #000;
+    overflow: visible;
+    /* показывает все, что за пределами блока */
+}
+
+.example-block-6{
+    max-height: 50px;
+    border: 1px solid #000;
+    overflow: hidden;
+    /* скрывает все, что за пределами блока */
+}
+
+.example-block-7{
+    max-height: 50px;
+    border: 1px solid #000;
+    overflow: scroll;
+    /* включает вертикальный и горизонтальный скролл внутри блока */
+}
+
+.example-block-8{
+    max-height: 50px;
+    border: 1px solid #000;
+    overflow: auto;
+    /* включает вертикальный и горизонтальный скролл принеобходтиости(т.е.,когда текста больше чем размер блога) */
+}
+
+.example-block-9{
+    display: inline;
+    /* превращает блочный тег в строчный */
+    border: 1px solid #000;
+    
+}
+
+.example-string-2{
+    display: block;
+    /* превращает строчный тег в блочный */
+    padding: 20px;
+    border: 5px solid #a20b0b;
+    margin: 10px;
+    
+}
+
+.example-string-3{
+    display: inline-block;
+    /* гибрид строчного и блочного тега */
+    padding: 20px;
+    border: 5px solid #a20b0b;
+    margin: 10px;
+    
+}
+
+.example-block-10{
+    display: none;
+    /* временно удаляет эл-т из документа, занимаемое место за ним не резервируется
+    и веб страница формируется так, словно элемента и небыло*/
+    border: 1px solid #000;
+    
+}
