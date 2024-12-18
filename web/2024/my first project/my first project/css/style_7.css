@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+/* ------------------------------------------------------ */
+
+body{
+    padding: 30px;
+}
+
+.block{
+    background: rgba(129,45,211,1);
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-2{
+    background: rgba(129,45,211,0.4);
+    /* background-color: rgba(129,45,211,0.4); - одинаковые записи */
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-3{
+    background: url('../img/avatar.jpg');
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-4{
+    background: url('../img/bg_repeat.jpg');
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-5{
+    background: rgb(16,3,233);
+    background: linear-gradient(90deg, rgba(16,3,233,1) 0%, rgba(18,254,255,1) 46%, rgba(241,255,0,1) 100%);
+    /* https://cssgradient.io/ - генератор градиента для CSS */
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-6{
+    background: rgb(16,3,233);
+    background: linear-gradient(170deg, rgba(16,3,233,1) 0%, rgba(18,254,255,1) 46%, rgba(241,255,0,1) 100%);
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-7{
+    background: url(../img/avatar.jpg) no-repeat;
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-8{
+    background: url(../img/avatar.jpg) repeat-x;
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-9{
+    background: url(../img/avatar.jpg) repeat-y;
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-10{
+    background: url(../img/avatar.jpg) space;
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-11{
+    background: url(../img/avatar.jpg) round;
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-12{
+    background: url(../img/avatar_3.jpg) 50px 20px no-repeat;
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-13{
+    background: url(../img/avatar_3.jpg) 20% 20% no-repeat;
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-14{
+    background: url(../img/avatar_3.jpg) center no-repeat;
+    /*background: url(../img/avatar_3.jpg) left no-repeat;
+    background: url(../img/avatar_3.jpg) right no-repeat;*/
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-15{
+    background: url(../img/bg.jpg) center no-repeat fixed;
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-16{
+    background: url(../img/avatar_3.jpg) 0 0/300px 100px no-repeat;
+    /* способ деформирорвать изображение, можно указывать в пиксилях, % и словами*/
+    background: url(../img/avatar_3.jpg) 0 0/50% 65% no-repeat;
+    background: url(../img/avatar_3.jpg) 0 0/contain no-repeat;
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-17{
+    background: url(../img/bg.jpg) 50%/cover no-repeat;
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.block-18{
+    background: url(../img/avatar.jpg) 0 0 no-repeat, url(../img/avatar_3.jpg) center no-repeat, url(../img/bg.jpg) 50%/cover no-repeat;
+
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.list{
+    margin: 0 0 50px 0;
+}
+
+.list li{
+    font-size: 54px;
+    margin: 0 0 15px 0;
+    background: url(../img/icon.png) left 5px no-repeat;
+    padding: 0 0 0 70px;
+}
